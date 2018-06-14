@@ -146,7 +146,7 @@ module ScopedSearch
 
       # Returns true if this is a textual column.
       def textual?
-        [:string, :text].include?(type)
+        [:string, :text, :cittext].include?(type)
       end
 
       # Returns true if this is a set.
